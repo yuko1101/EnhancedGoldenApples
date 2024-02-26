@@ -18,4 +18,8 @@ public class MixinFoods {
     @Final
     @Shadow
     public static final FoodProperties GOLDEN_APPLE = (new FoodProperties.Builder()).nutrition(4).saturationMod(1.2F).effect(new MobEffectInstance(MobEffects.REGENERATION, 100, 3), 1.0F).effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 1), 1.0F).alwaysEat().build();
+
+    @Final
+    @Shadow
+    public static final FoodProperties GOLDEN_CARROT = (new FoodProperties.Builder()).nutrition(2).saturationMod(1.2F).effect(new MobEffectInstance(MobEffects.REGENERATION, 2, 10), 1.0F).fast().alwaysEat().build();
 }
