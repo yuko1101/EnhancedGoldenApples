@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "io.github.yuko1101.enhancedgoldenapples.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "EnhancedGoldenApples.refmap.json",
+  "refmap": "enhancedgoldenapples.refmap.json",
   "mixins": [
     "MixinFoods",
     "MixinLivingEntity"
