@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "enhancedgoldenapples"
+version = "${version}"
+displayName = "EnhancedGoldenApples"
+authors = "yuko1101"
+description = '''
+
+'''
+#logoFile = ""
+
+[[dependencies.enhancedgoldenapples]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.enhancedgoldenapples]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "enhancedgoldenapples.mixins.json"

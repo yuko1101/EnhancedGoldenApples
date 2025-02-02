@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "io.github.yuko1101.enhancedgoldenapples.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "MixinConsumableComponents",
+    "MixinDeathProtectionComponent",
+    "MixinFoodComponents",
+    "MixinItems"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

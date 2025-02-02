@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "enhancedgoldenapples",
+  "version": "${version}",
+  "name": "EnhancedGoldenApples",
+  "description": "",
+  "authors": [
+    "yuko1101"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/enhancedgoldenapples/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.yuko1101.enhancedgoldenapples.fabric.EnhancedGoldenApplesFabric"
+    ],
+    "client": [
+      "io.github.yuko1101.enhancedgoldenapples.fabric.client.EnhancedGoldenApplesFabricClient"
+    ]
+  },
+  "mixins": [
+    "enhancedgoldenapples.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
