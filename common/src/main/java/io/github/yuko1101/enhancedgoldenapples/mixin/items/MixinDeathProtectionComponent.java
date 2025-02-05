@@ -1,4 +1,4 @@
-package io.github.yuko1101.enhancedgoldenapples.mixin;
+package io.github.yuko1101.enhancedgoldenapples.mixin.items;
 
 import net.minecraft.component.type.DeathProtectionComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
