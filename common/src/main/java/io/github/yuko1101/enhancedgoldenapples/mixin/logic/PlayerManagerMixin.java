@@ -31,7 +31,7 @@ public abstract class PlayerManagerMixin {
     @Inject(method = "respawnPlayer", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/network/ServerPlayerEntity;setHealth(F)V"))
     private void respawnPlayer(ServerPlayerEntity player, boolean alive, Entity.RemovalReason removalReason, CallbackInfoReturnable<ServerPlayerEntity> cir, @Local(ordinal = 1) ServerPlayerEntity serverPlayerEntity) {
         serverPlayerEntity.setGlowing(true);
-        var maxHealth = serverPlayerEntity.getAttributes().getCustomInstance(EntityAttributes.MAX_HEALTH);
+        var maxHealth = serverPlayerEntity.getAttributes().getCustomInstance(EntityAttributes.GENERIC_MAX_HEALTH);
         if (maxHealth != null) {
             maxHealth.addPersistentModifier(HEALTH_BOOST);
         }

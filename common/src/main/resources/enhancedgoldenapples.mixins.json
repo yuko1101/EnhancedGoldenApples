@@ -6,10 +6,8 @@
   "client": [
   ],
   "mixins": [
-    "items.MixinConsumableComponents",
-    "items.MixinDeathProtectionComponent",
     "items.MixinFoodComponents",
-    "items.MixinItems",
+    "items.MixinLivingEntity",
     "logic.PlayerManagerMixin"
   ],
   "injectors": {
