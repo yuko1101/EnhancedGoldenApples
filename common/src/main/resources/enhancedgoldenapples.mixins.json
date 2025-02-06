@@ -8,6 +8,7 @@
   "mixins": [
     "items.MixinFoodComponents",
     "items.MixinLivingEntity",
+    "logic.LivingEntityMixin",
     "logic.PlayerManagerMixin"
   ],
   "injectors": {
