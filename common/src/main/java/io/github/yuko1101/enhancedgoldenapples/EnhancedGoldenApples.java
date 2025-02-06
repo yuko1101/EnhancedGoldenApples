@@ -14,15 +14,6 @@ public final class EnhancedGoldenApples {
     }
 
 
-    private static final Identifier HEALTH_BOOST_ID = Identifier.of("enhancedgoldenapples", "health_boost");
-    private static final EntityAttributeModifier HEALTH_BOOST = new EntityAttributeModifier(HEALTH_BOOST_ID, 20.0, EntityAttributeModifier.Operation.ADD_VALUE);
-
-    public static void applyCustomStatus(ServerPlayerEntity player, boolean isRespawn) {
-        player.setGlowing(true);
-        var maxHealth = player.getAttributes().getCustomInstance(EntityAttributes.MAX_HEALTH);
-        if (maxHealth != null) {
-            maxHealth.addPersistentModifier(HEALTH_BOOST);
-        }
-        if (isRespawn) player.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 60 * 20, 0, true, false));
-    }
+    public static final Identifier HEALTH_BOOST_ID = Identifier.of("enhancedgoldenapples", "health_boost");
+    public static final EntityAttributeModifier HEALTH_BOOST = new EntityAttributeModifier(HEALTH_BOOST_ID, 20.0, EntityAttributeModifier.Operation.ADD_VALUE);
 }
