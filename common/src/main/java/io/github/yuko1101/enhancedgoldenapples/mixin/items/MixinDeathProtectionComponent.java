@@ -20,7 +20,7 @@ public class MixinDeathProtectionComponent {
                     new ClearAllEffectsConsumeEffect(),
                     new ApplyEffectsConsumeEffect(
                             List.of(
-                                    new StatusEffectInstance(StatusEffects.REGENERATION, 40, 5),
+                                    new StatusEffectInstance(StatusEffects.REGENERATION, 20, 5),
                                     new StatusEffectInstance(StatusEffects.ABSORPTION, 100, 2),
                                     new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 800, 0)
                             )
