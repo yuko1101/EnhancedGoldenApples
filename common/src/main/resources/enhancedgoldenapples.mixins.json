@@ -10,6 +10,7 @@
     "items.MixinDeathProtectionComponent",
     "items.MixinFoodComponents",
     "items.MixinItems",
+    "logic.HungerManagerMixin",
     "logic.LivingEntityMixin",
     "logic.PlayerManagerMixin"
   ],

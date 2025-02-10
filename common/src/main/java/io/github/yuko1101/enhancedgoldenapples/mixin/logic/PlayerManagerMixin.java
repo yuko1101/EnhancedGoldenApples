@@ -21,6 +21,7 @@ public abstract class PlayerManagerMixin {
 
     @Inject(method = "respawnPlayer", at = @At(value = "INVOKE", target = "Lnet/minecraft/server/network/ServerPlayerEntity;setHealth(F)V"))
     private void respawnPlayer(ServerPlayerEntity player, boolean alive, Entity.RemovalReason removalReason, CallbackInfoReturnable<ServerPlayerEntity> cir, @Local(ordinal = 1) ServerPlayerEntity serverPlayerEntity) {
-        serverPlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 60 * 20, 0, false, false));
+        serverPlayerEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 5 * 60 * 20, 0, false, false));
+        serverPlayerEntity.getHungerManager().setFoodLevel(16);
     }
 }
