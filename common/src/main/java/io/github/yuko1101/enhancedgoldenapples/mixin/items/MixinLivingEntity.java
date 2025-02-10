@@ -14,7 +14,7 @@ public class MixinLivingEntity {
         final int duration;
         final int amplifier;
         if (effect.getEffectType() == StatusEffects.REGENERATION) {
-            duration = 40;
+            duration = 20;
             amplifier = 5;
         } else if (effect.getEffectType() == StatusEffects.ABSORPTION) {
             duration = effect.getDuration();
